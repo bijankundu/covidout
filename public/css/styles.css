@@ -78,6 +78,7 @@ footer {
 .country {
 	font-family: 'Changa', sans-serif;
 	color: red;
+	text-transform: capitalize;
 }
 
 .start-header {
