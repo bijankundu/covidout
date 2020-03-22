@@ -110,20 +110,20 @@ app.get("/", (req, res) => {
 app.get("/test-centers", (req, res) => {
 
     res.render("test-centers", {
-        country: country
+        country: "INDIA"
     });
 
 });
 
 app.get("/helpline", (req, res) => {
     res.render("helpline", {
-        country: country
+        country: "INDIA"
     });
 });
 
 app.get("/sources", (req, res) => {
     res.render("sources", {
-        country: country
+        country: ""
     });
 });
 
