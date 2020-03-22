@@ -291,4 +291,8 @@ footer {
 		font-size: 0.8rem;
 		text-align: justify;
 	}
+
+	.head-top {
+		margin-top: 15%;
+	}
 }
