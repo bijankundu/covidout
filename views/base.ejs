@@ -1,0 +1,97 @@
+<%-  include('header') -%>
+
+<div class="container">
+    <div class="row mx-auto">
+        <div class="col-lg col-md-6">
+            <h4>Coronavirus Outbreak in <%= country %> </h4>
+        </div>
+        <div class="text-right col-lg col-md-6">
+            <div class="date">
+                <h6>Jan 30, 2020 --> <%= today %> (today) </h6>
+            </div>
+        </div>
+    </div>
+    <div class="row card-row mx-auto">
+        <div class="card col-lg col-md-6">
+            <div class="card-title">
+                TOTAL CASES
+            </div>
+            <h1 class="card-title" style="color: #0010f2;"><%= country_total %> </h1>
+            <p class="card-text"><%= country_total_percentage%>% of total cases in the world.</p>
+        </div>
+        <div class="card col-lg col-md-6">
+            <div class="card-title">
+                ACTIVE CASES
+            </div>
+            <h1 class="card-title" style="color:#ff8903"><%= country_active %> </h1>
+            <p class="card-text"><%= country_active_cases_percentage %>% of total active cases.</p>
+        </div>
+        <div class="card col-lg col-md-6">
+            <div class="card-title">
+                TOTAL RECOVERED
+            </div>
+            <h1 class="card-title" style="color: #00ff04;"><%= country_recovered %> </h1>
+            <p class="card-text"><%= country_recovered_percentage %>% of total active cases.</p>
+        </div>
+        <div class="card col-lg col-md-6">
+            <div class="card-title">
+                CRITICAL CASES
+            </div>
+            <h1 class="card-title" style="color: #ff0000;"><%= country_critical %> </h1>
+            <p class="card-text"><%= country_critical_percentage %>% of total active cases.</p>
+        </div>
+        <div class="card col-lg col-md-6">
+            <div class="card-title">
+                TOTAL DEATH
+            </div>
+            <h1 class="card-title" style="color: #949292;"><%= country_dead %> </h1>
+            <p class="card-text"><%= country_dead_percentage %>% of total active cases.</p>
+        </div>
+    </div>
+
+    <div class="row world-stats">
+        <div class="col col-md-6 col-sm-12 col-lg">
+            <h4>World Stats</h4>
+        </div>
+    </div>
+    <div class="row card-row mx-auto">
+        <div class="card col-md-6 col-sm-12 col-lg">
+            <div class="card-title">
+                TOTAL CASES
+            </div>
+            <h1 class="card-title" style="color: #0010f2;"><%= world_total %> </h1>
+
+        </div>
+        <div class="card col-md-6 col-sm-12 col-lg">
+            <div class="card-title">
+                NEW CASES
+            </div>
+            <h1 class="card-title" style="color: #ff8903;"><%= world_new %> </h1>
+        </div>
+        <div class="card col-md-6 col-sm-12 col-lg">
+            <div class="card-title">
+                TOTAL RECOVERED
+            </div>
+            <h1 class="card-title" style="color: #00ff04;"><%= world_recovered %> </h1>
+        </div>
+        <div class="card col-md-6 col-sm-12 col-lg">
+            <div class="card-title">
+                NEW DEATHS
+            </div>
+            <h1 class="card-title" style="color: #ff0000;"><%= world_new_death %> </h1>
+
+        </div>
+        <div class="card col-md-6 col-sm-12 col-lg">
+            <div class="card-title">
+                TOTAL DEATH
+            </div>
+            <h1 class="card-title" style="color: #949292;"><%= world_dead %> </h1>
+            <p class="card-text"><%= world_dead_percentage %> % of total cases.</p>
+        </div>
+    </div>
+
+
+</div>
+
+
+<%-  include('footer') -%>
