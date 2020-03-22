@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 
     if (country_stats.latest_stat_by_country[0].serious_critical == "")
         country_stats.latest_stat_by_country[0].serious_critical = "0";
-    res.render('base', {
+    res.render('home', {
         country: country,
         today: today.toLocaleDateString('en-US', options),
         world_total: world_stats.total_cases,
@@ -84,6 +84,26 @@ req.end(function (res) {
     // console.log(country_stats);
 });
 
+
+app.get("/test-centers", (req, res) => {
+
+    res.render("test-centers", {
+        country: country
+    });
+
+});
+
+app.get("/helpline", (req, res) => {
+    res.render("helpline", {
+        country: country
+    });
+});
+
+app.get("/sources", (req, res) => {
+    res.render("sources", {
+        country: country
+    });
+});
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server is running on port 3000");
 });

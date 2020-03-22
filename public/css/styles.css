@@ -13,12 +13,25 @@ body {
 	font-family: 'Roboto Slab', serif;
 }
 
+a {
+	text-decoration: none;
+	color: #1766e6;
+}
+
 footer {
 	padding-top: 3%;
 	position: relative;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
+}
+
+h3 {
+	margin-top: 3%;
+}
+
+li {
+	margin-left: 5%;
 }
 
 .card-text,
@@ -50,6 +63,10 @@ footer {
 .card {
 	margin: 0.3%;
 	padding: 2% 1% 2% 1%;
+}
+
+.helpline {
+	margin-top: 2%;
 }
 
 /* #Navigation
@@ -211,7 +228,8 @@ footer {
 		text-align: center;
 	}
 
-	h4 {
+	h4,
+	h2 {
 		font-size: 1.5rem;
 		margin-top: 5%;
 		text-decoration: underline;
@@ -227,6 +245,19 @@ footer {
 	}
 
 	footer {
+		font-size: 0.75rem;
+	}
+
+	.top-heading {
+		font-size: 2rem;
+		margin-top: 5%;
+	}
+
+	.helpline h6 {
 		font-size: 0.8rem;
+	}
+
+	.helpline {
+		margin-top: 7%;
 	}
 }
