@@ -285,4 +285,9 @@ footer {
 		text-align: left;
 		margin-bottom: 3%;
 	}
+
+	.disclaimer {
+		font-size: 0.8rem;
+		text-align: justify;
+	}
 }
