@@ -260,4 +260,29 @@ footer {
 	.helpline {
 		margin-top: 7%;
 	}
+
+	.test-heading {
+		font-size: 1.7rem;
+		margin-top: 5%;
+	}
+
+	ul h3 {
+		font-size: 1.3rem;
+		margin-top: 5%;
+	}
+
+	ul li {
+		margin-left: 8%;
+		font-size: 1rem;
+	}
+
+	ul {
+		text-align: left;
+	}
+
+	.source {
+		font-size: 0.85rem;
+		text-align: left;
+		margin-bottom: 3%;
+	}
 }
