@@ -80,7 +80,7 @@ app.get("/", (req, res) => {
             let india_status_total_cases = india_status.cases;
 
             res.render('home', {
-                country: country,
+                country: india,
                 today: today.toLocaleDateString('en-US', options),
                 world_total: world_stats.total_cases,
                 world_new: world_stats.new_cases,
