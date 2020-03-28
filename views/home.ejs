@@ -62,78 +62,80 @@
                 </div>
             </div>
             <div class="row card-row mx-auto">
-                <div class="card col-lg col-md-6">
+                <div class="card col-lg col-md-6  country_total">
                     <div class="card-title">
                         TOTAL CASES
                     </div>
-                    <h1 class="card-title" style="color: #0010f2;"><%= india_total %> </h1>
+                    <h1 class="card-title" style="color: #0011ff;"><%= india_total %> </h1>
                     <p class="card-text"><%= india_total_percentage%>% of total cases in the world.</p>
                 </div>
-                <div class="card col-lg col-md-6">
+                <div class="card col-lg col-md-6 country_active">
                     <div class="card-title">
                         ACTIVE CASES
                     </div>
-                    <h1 class="card-title" style="color:#ff8903"><%= india_active %> </h1>
+                    <h1 class="card-title " style="color:#ff8903"><%= india_active %> </h1>
                     <p class="card-text"><%= india_active_cases_percentage %>% of total active cases.</p>
                 </div>
-                <div class="card col-lg col-md-6">
+                <div class="card col-lg col-md-6 country_recovered">
                     <div class="card-title">
                         TOTAL RECOVERED
                     </div>
-                    <h1 class="card-title" style="color: #00ff04;"><%= india_recovered %> </h1>
+                    <h1 class="card-title " style="color: #00ff04;"><%= india_recovered %> </h1>
                     <p class="card-text"><%= india_recovered_percentage %>% of total active cases.</p>
                 </div>
-                <div class="card col-lg col-md-6">
+                <div class="card col-lg col-md-6 country_critical">
                     <div class="card-title">
                         CRITICAL CASES
                     </div>
-                    <h1 class="card-title" style="color: #ff0000;"><%= india_critical %> </h1>
+                    <h1 class="card-title " style="color: #ff0000;"><%= india_critical %> </h1>
                     <p class="card-text"><%= india_critical_percentage %>% of total active cases.</p>
                 </div>
-                <div class="card col-lg col-md-6">
+                <div class="card col-lg col-md-6  country_dead">
                     <div class="card-title">
                         TOTAL DEATH
                     </div>
-                    <h1 class="card-title" style="color: #949292;"><%= india_dead %> </h1>
+                    <h1 class="card-title" style="color: #636161;"><%= india_dead %> </h1>
                     <p class="card-text"><%= india_dead_percentage %>% of total active cases.</p>
                 </div>
             </div>
+
+
 
             <div class="row world-stats justify-content-center">
                 <h2>World Status</h2>
             </div>
             <div class="row card-row mx-auto">
-                <div class="card col-md-6 col-sm-12 col-lg">
+                <div class="card col-md-6 col-sm-12 col-lg country_total">
                     <div class="card-title">
                         TOTAL CASES
                     </div>
                     <h1 class="card-title" style="color: #0010f2;"><%= world_total %> </h1>
 
                 </div>
-                <div class="card col-md-6 col-sm-12 col-lg">
+                <div class="card col-md-6 col-sm-12 col-lg country_active">
                     <div class="card-title">
                         NEW CASES
                     </div>
                     <h1 class="card-title" style="color: #ff8903;"><%= world_new %> </h1>
                 </div>
-                <div class="card col-md-6 col-sm-12 col-lg">
+                <div class="card col-md-6 col-sm-12 col-lg country_recovered">
                     <div class="card-title">
                         TOTAL RECOVERED
                     </div>
                     <h1 class="card-title" style="color: #00ff04;"><%= world_recovered %> </h1>
                 </div>
-                <div class="card col-md-6 col-sm-12 col-lg">
+                <div class="card col-md-6 col-sm-12 col-lg country_critical">
                     <div class="card-title">
                         NEW DEATHS
                     </div>
                     <h1 class="card-title" style="color: #ff0000;"><%= world_new_death %> </h1>
 
                 </div>
-                <div class="card col-md-6 col-sm-12 col-lg">
+                <div class="card col-md-6 col-sm-12 col-lg  country_dead">
                     <div class="card-title">
                         TOTAL DEATH
                     </div>
-                    <h1 class="card-title" style="color: #949292;"><%= world_dead %> </h1>
+                    <h1 class="card-title" style="color: #636161;"><%= world_dead %> </h1>
                     <p class="card-text"><%= world_dead_percentage %>% of total cases.</p>
                 </div>
             </div>

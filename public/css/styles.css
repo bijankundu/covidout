@@ -61,12 +61,34 @@ footer {
 }
 
 .card {
-	margin: 0.3%;
+	margin: 0.8%;
 	padding: 2% 1% 2% 1%;
+	border-radius: 5%;
+	border: 1px solid #B8B8B8;
 }
 
 .helpline {
 	margin-top: 2%;
+}
+
+.country_total {
+	background-color: #0011ff33;
+}
+
+.country_active {
+	background-color: #ff890346;
+}
+
+.country_recovered {
+	background-color: #00ff0441;
+}
+
+.country_critical {
+	background-color: #ff000028;
+}
+
+.country_dead {
+	background-color: #94929227;
 }
 
 /* #Navigation
