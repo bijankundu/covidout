@@ -1,320 +1,318 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa&family=Lemonada:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Changa&family=Lemonada:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-	height: 100%;
-	box-sizing: border-box;
-	font-family: 'Roboto Slab', serif;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
 
 a {
-	text-decoration: none;
-	color: #1766e6;
+  text-decoration: none;
+  color: #1766e6;
 }
 
 footer {
-	padding-top: 3%;
-	position: relative;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
+  padding-top: 3%;
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
 }
 
 h3 {
-	margin-top: 3%;
+  margin-top: 3%;
 }
 
 li {
-	margin-left: 5%;
+  margin-left: 5%;
 }
 
 .card-text,
 footer {
-	color: #5e5d5d;
+  color: #5e5d5d;
 }
 
 .world-stats {
-	margin-top: 4%;
+  margin-top: 4%;
 }
 
 .date {
-
-	border: .05rem solid #dadee4;
-	border-radius: .8rem;
-	display: block;
-	text-align: center;
+  border: 0.05rem solid #dadee4;
+  border-radius: 0.8rem;
+  display: block;
+  text-align: center;
 }
 
 .content {
-	margin-top: 7%;
+  margin-top: 7%;
 }
 
 .card-row {
-	margin-top: 5%;
-	text-align: center;
+  margin-top: 5%;
+  text-align: center;
 }
 
 .card {
-	margin: 0.8%;
-	padding: 2% 1% 2% 1%;
-	border-radius: 5%;
-	border: 1px solid #B8B8B8;
+  margin: 0.8%;
+  padding: 2% 1% 2% 1%;
+  border-radius: 5%;
 }
 
 .helpline {
-	margin-top: 2%;
+  margin-top: 2%;
 }
 
 .country_total {
-	background-color: #0011ff33;
+  border: 1px solid #0011ff;
 }
 
 .country_active {
-	background-color: #ff890346;
+  border: 1px solid #ff8903;
 }
 
 .country_recovered {
-	background-color: #00ff0441;
+  border: 1px solid #00ff04;
 }
 
 .country_critical {
-	background-color: #ff000028;
+  border: 1px solid #ff0000;
 }
 
 .country_dead {
-	background-color: #94929227;
+  border: 1px solid #949292;
 }
 
 /* #Navigation
 ================================================== */
 #brand {
-	font-family: 'Lemonada', cursive;
+  font-family: "Lemonada", cursive;
 }
 
 .country {
-	font-family: 'Changa', sans-serif;
-	color: red;
-	text-transform: capitalize;
+  font-family: "Changa", sans-serif;
+  color: red;
+  text-transform: capitalize;
 }
 
 .start-header {
-	opacity: 1;
-	transform: translateY(0);
-	padding: 10px 0;
-	box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
-	-webkit-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+  padding: 10px 0;
+  box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .start-header.scroll-on {
-	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
-	padding: 5px 0;
-	-webkit-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+  box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+  padding: 5px 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .start-header.scroll-on .navbar-brand img {
-	height: 28px;
-	-webkit-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+  height: 28px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .navigation-wrap {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	-webkit-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .navbar {
-	padding: 0;
+  padding: 0;
 }
 
 .navbar-brand img {
-	height: 52px;
-	width: auto;
-	display: block;
-	-webkit-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+  height: 52px;
+  width: auto;
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .navbar-toggler {
-	float: right;
-	border: none;
-	padding-right: 0;
+  float: right;
+  border: none;
+  padding-right: 0;
 }
 
 .navbar-toggler:active,
 .navbar-toggler:focus {
-	outline: none;
+  outline: none;
 }
 
 .navbar-light .navbar-toggler-icon {
-	width: 24px;
-	height: 17px;
-	background-image: none;
-	position: relative;
-	border-bottom: 1px solid #000;
-	transition: all 300ms linear;
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 1px solid #000;
+  transition: all 300ms linear;
 }
 
 .navbar-light .navbar-toggler-icon:after,
 .navbar-light .navbar-toggler-icon:before {
-	width: 24px;
-	position: absolute;
-	height: 1px;
-	background-color: #000;
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: 2;
-	transition: all 300ms linear;
+  width: 24px;
+  position: absolute;
+  height: 1px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
+  transition: all 300ms linear;
 }
 
 .navbar-light .navbar-toggler-icon:after {
-	top: 8px;
+  top: 8px;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(8px) rotate(-45deg);
+  transform: translateY(8px) rotate(-45deg);
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
+  border-color: transparent;
 }
 
 .nav-link {
-	color: #212121 !important;
-	font-weight: 500;
-	transition: all 200ms linear;
+  color: #212121 !important;
+  font-weight: 500;
+  transition: all 200ms linear;
 }
 
 .nav-item:hover .nav-link {
-	color: #8167a9 !important;
+  color: #8167a9 !important;
 }
 
 .nav-item.active .nav-link {
-	color: #777 !important;
+  color: #777 !important;
 }
 
 .nav-link {
-	position: relative;
-	padding: 5px 0 !important;
-	display: inline-block;
+  position: relative;
+  padding: 5px 0 !important;
+  display: inline-block;
 }
 
 .nav-item:after {
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	content: '';
-	background-color: #8167a9;
-	opacity: 0;
-	transition: all 200ms linear;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #8167a9;
+  opacity: 0;
+  transition: all 200ms linear;
 }
 
 .nav-item:hover:after {
-	bottom: 0;
-	opacity: 1;
+  bottom: 0;
+  opacity: 1;
 }
 
 .nav-item.active:hover:after {
-	opacity: 0;
+  opacity: 0;
 }
 
 .nav-item {
-	position: relative;
-	transition: all 200ms linear;
+  position: relative;
+  transition: all 200ms linear;
 }
 
 @media screen and (max-width: 1080px) {
-	.content {
-		margin-top: 15%;
-	}
+  .content {
+    margin-top: 15%;
+  }
 
-	body {
-		text-align: center;
-	}
+  body {
+    text-align: center;
+  }
 
-	h4,
-	h2 {
-		font-size: 1.5rem;
-		margin-top: 5%;
-		text-decoration: underline;
-	}
+  h4,
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 5%;
+    text-decoration: underline;
+  }
 
-	.card {
-		margin-top: 2%;
-		margin-bottom: 2%;
-	}
+  .card {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
 
-	.date {
-		margin-top: 5%;
-	}
+  .date {
+    margin-top: 5%;
+  }
 
-	footer {
-		font-size: 0.75rem;
-	}
+  footer {
+    font-size: 0.75rem;
+  }
 
-	.top-heading {
-		font-size: 2rem;
-		margin-top: 5%;
-	}
+  .top-heading {
+    font-size: 2rem;
+    margin-top: 5%;
+  }
 
-	.helpline h6 {
-		font-size: 0.8rem;
-	}
+  .helpline h6 {
+    font-size: 0.8rem;
+  }
 
-	.helpline {
-		margin-top: 7%;
-	}
+  .helpline {
+    margin-top: 7%;
+  }
 
-	.test-heading {
-		font-size: 1.7rem;
-		margin-top: 5%;
-	}
+  .test-heading {
+    font-size: 1.7rem;
+    margin-top: 5%;
+  }
 
-	ul h3 {
-		font-size: 1.3rem;
-		margin-top: 5%;
-	}
+  ul h3 {
+    font-size: 1.3rem;
+    margin-top: 5%;
+  }
 
-	ul li {
-		margin-left: 8%;
-		font-size: 1rem;
-	}
+  ul li {
+    margin-left: 8%;
+    font-size: 1rem;
+  }
 
-	ul {
-		text-align: left;
-	}
+  ul {
+    text-align: left;
+  }
 
-	.source {
-		font-size: 0.85rem;
-		text-align: left;
-		margin-bottom: 3%;
-	}
+  .source {
+    font-size: 0.85rem;
+    text-align: left;
+    margin-bottom: 3%;
+  }
 
-	.disclaimer {
-		font-size: 0.8rem;
-		text-align: justify;
-	}
+  .disclaimer {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
 
-	.head-top {
-		margin-top: 15%;
-	}
+  .head-top {
+    margin-top: 15%;
+  }
 }
