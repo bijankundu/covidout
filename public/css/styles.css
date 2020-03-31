@@ -62,14 +62,14 @@ footer {
 .card {
   margin: 0.8%;
   padding: 2% 1% 2% 1%;
-  border-radius: 5%;
+  border-color: #868686a4;
 }
 
 .helpline {
   margin-top: 2%;
 }
 
-.country_total {
+/* .country_total {
   border: 1px solid #0011ff;
 }
 
@@ -87,7 +87,7 @@ footer {
 
 .country_dead {
   border: 1px solid #949292;
-}
+} */
 
 /* #Navigation
 ================================================== */
