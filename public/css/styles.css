@@ -88,7 +88,9 @@ footer {
 .country_dead {
   border: 1px solid #949292;
 } */
-
+div i {
+  padding: 5% 0 5% 0;
+}
 /* #Navigation
 ================================================== */
 #brand {
@@ -241,6 +243,9 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
+  div i {
+    padding: 2% 0 2% 0;
+  }
   .content {
     margin-top: 15%;
   }
@@ -314,5 +319,8 @@ footer {
 
   .head-top {
     margin-top: 15%;
+  }
+  .card-heading {
+    font-size: 1.4rem;
   }
 }

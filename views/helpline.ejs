@@ -1,247 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:description" content="A collection of useful data visualisation of the Corona virus outbreak.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:description"
+      content="A collection of useful data visualisation of the Corona virus outbreak."
+    />
     <link rel="shortcut icon" href="images/index.ico" />
     <title>Covid - 19</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <div class="navigation-wrap bg-light start-header start-style">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <div class="navbar-brand" id="brand"> COVID - 19
-                            <span class="country"><%= country %> </span>
-                        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a href="/"
+                ><div class="navbar-brand" id="brand">
+                  COVID - 19
+                  <span class="country"> <%= country %> </span>
+                </div></a
+              >
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/">Home</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/helpline">Helpline</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/test-centers">Test Centers</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/affected-countries">Affected Countries</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/sources">Sources</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </nav>
-                </div>
-            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/helpline">Helpline</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/test-centers">Test Centers</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/affected-countries"
+                      >Affected Countries</a
+                    >
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/sources">Sources</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="container" style="color: rgb(75, 74, 74);">
-            <div class="row justify-content-center">
-                <h1 class="top-heading">Helpline</h1>
-            </div>
-            <div class="row helpline">
-                <h6>Maximizing the efforts to contain the spread of novel Corona Virus (Covid-19),<a
-                        href="https://www.mohfw.gov.in/" target="_blank">
-                        Ministry
-                        of
-                        Health & Family Welfare</a> has provided these helpline numbers of States & Union Territories
-                    (UTs).</h6>
-            </div>
-            <div class="row justify-content-center helpline">
-                <h5 class="heading">National Helpline Number</h5>
-            </div>
-            <div class="row justify-content-center">
-                <h5><a href="tel:1075">1075</a> | <a href="tel:1800-112-545">1800-112-545</a> </h5>
-            </div>
-            <div class="row justify-content-center helpline">
-                <h5 class=" heading">Central Helpline Number</h5>
-            </div>
-            <div class="row justify-content-center">
-                <h5><a href="tel:+91-11-23978043">+91-11-23978043</a> | <a href="tel:+91-11-23978046">+91-11-23978046
-                    </a>
-                </h5>
-            </div>
-            <div class="row justify-content-center helpline">
-                <h5 class="heading">Central Helpline Email</h5>
-            </div>
-            <div class="row justify-content-center">
-                <h5><a href="mailto:ncov2019@gmail.com">ncov2019@gmail.com</a></h5>
-            </div>
-
-            <table class="table helpline">
-                <thead>
-                    <tr>
-                        <th scope="col">Sr. No.</th>
-                        <th scope="col">State</th>
-                        <th scope="col">Helpline Number</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Andhra Pradesh</td>
-                        <td><a href="tel:0866-2410978">0866-2410978</a></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Arunachal Pradesh</td>
-                        <td><a href="tel:9536055743">9536055743</a></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Assam</td>
-                        <td><a href="tel:6913347770">6913347770</a></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Bihar</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Chhattisgarh</td>
-                        <td><a href="tel:077122-35091"> 077122-35091</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Goa</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Gujarat</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Haryana</td>
-                        <td><a href="tel:8558893911">8558893911</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <td>Himachal Pradesh</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10</th>
-                        <td>Jharkhand</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">11</th>
-                        <td>Karnataka</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">12</th>
-                        <td>Kerala</td>
-                        <td><a href="tel:0471-2552056">0471-2552056</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">13</th>
-                        <td>Madhya Pradesh</td>
-                        <td><a href="tel:0755-2527177">0755-2527177</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">14</th>
-                        <td>Maharashtra</td>
-                        <td><a href="tel:020-26127394">020-26127394</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">15</th>
-                        <td>Manipur</td>
-                        <td><a href="tel:3852411668">3852411668</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16</th>
-                        <td>Meghalaya</td>
-                        <td><a href="tel:9366090748">9366090748</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">17</th>
-                        <td>Mizoram</td>
-                        <td><a href="tel:102">102</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">18</th>
-                        <td>Nagaland</td>
-                        <td><a href="tel:7005539653">7005539653</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">19</th>
-                        <td>Odisha</td>
-                        <td><a href="tel:9439994859">9439994859</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">20</th>
-                        <td>Punjab</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">21</th>
-                        <td>Rajasthan</td>
-                        <td><a href="tel:0141-2225624">0141-2225624</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">22</th>
-                        <td>Sikkim</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">23</th>
-                        <td>Tamil Nadu</td>
-                        <td><a href="tel:044-29510500">044-29510500</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">24</th>
-                        <td>Telangana</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25</th>
-                        <td>Tripura</td>
-                        <td><a href="tel:0381-2315879">0381-2315879</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">26</th>
-                        <td>Uttarakhand</td>
-                        <td><a href="tel:104">104</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">27</th>
-                        <td>Uttar Pradesh</td>
-                        <td><a href="tel:18001805145">18001805145</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">28</th>
-                        <td>West Bengal</td>
-                        <td><a href="tel:3323412600">3323412600</a></td>
-                    </tr>
-                </tbody>
-            </table>
+      <div class="container" style="color: rgb(75, 74, 74);">
+        <div class="row justify-content-center">
+          <h1 class="top-heading">Helpline</h1>
+        </div>
+        <div class="row helpline">
+          <h6>
+            Maximizing the efforts to contain the spread of novel Corona Virus
+            (Covid-19),<a href="https://www.mohfw.gov.in/" target="_blank">
+              Ministry of Health & Family Welfare</a
+            >
+            has provided these helpline numbers of States & Union Territories
+            (UTs).
+          </h6>
+        </div>
+        <div class="row justify-content-center helpline">
+          <h5 class="heading">National Helpline Number</h5>
+        </div>
+        <div class="row justify-content-center">
+          <h5>
+            <a href="tel:1075">1075</a> |
+            <a href="tel:1800-112-545">1800-112-545</a>
+          </h5>
+        </div>
+        <div class="row justify-content-center helpline">
+          <h5 class=" heading">Central Helpline Number</h5>
+        </div>
+        <div class="row justify-content-center">
+          <h5>
+            <a href="tel:+91-11-23978043">+91-11-23978043</a> |
+            <a href="tel:+91-11-23978046">+91-11-23978046 </a>
+          </h5>
+        </div>
+        <div class="row justify-content-center helpline">
+          <h5 class="heading">Central Helpline Email</h5>
+        </div>
+        <div class="row justify-content-center">
+          <h5><a href="mailto:ncov2019@gmail.com">ncov2019@gmail.com</a></h5>
         </div>
 
-        <%- include('partials/footer') -%>
+        <table class="table helpline">
+          <thead>
+            <tr>
+              <th scope="col">Sr. No.</th>
+              <th scope="col">State</th>
+              <th scope="col">Helpline Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Andhra Pradesh</td>
+              <td><a href="tel:0866-2410978">0866-2410978</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Arunachal Pradesh</td>
+              <td><a href="tel:9536055743">9536055743</a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Assam</td>
+              <td><a href="tel:6913347770">6913347770</a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Bihar</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Chhattisgarh</td>
+              <td><a href="tel:077122-35091"> 077122-35091</a></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Goa</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Gujarat</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Haryana</td>
+              <td><a href="tel:8558893911">8558893911</a></td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Himachal Pradesh</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Jharkhand</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Karnataka</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Kerala</td>
+              <td><a href="tel:0471-2552056">0471-2552056</a></td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Madhya Pradesh</td>
+              <td><a href="tel:0755-2527177">0755-2527177</a></td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>Maharashtra</td>
+              <td><a href="tel:020-26127394">020-26127394</a></td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td>Manipur</td>
+              <td><a href="tel:3852411668">3852411668</a></td>
+            </tr>
+            <tr>
+              <th scope="row">16</th>
+              <td>Meghalaya</td>
+              <td><a href="tel:9366090748">9366090748</a></td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>Mizoram</td>
+              <td><a href="tel:102">102</a></td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>Nagaland</td>
+              <td><a href="tel:7005539653">7005539653</a></td>
+            </tr>
+            <tr>
+              <th scope="row">19</th>
+              <td>Odisha</td>
+              <td><a href="tel:9439994859">9439994859</a></td>
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td>Punjab</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td>Rajasthan</td>
+              <td><a href="tel:0141-2225624">0141-2225624</a></td>
+            </tr>
+            <tr>
+              <th scope="row">22</th>
+              <td>Sikkim</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">23</th>
+              <td>Tamil Nadu</td>
+              <td><a href="tel:044-29510500">044-29510500</a></td>
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td>Telangana</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">25</th>
+              <td>Tripura</td>
+              <td><a href="tel:0381-2315879">0381-2315879</a></td>
+            </tr>
+            <tr>
+              <th scope="row">26</th>
+              <td>Uttarakhand</td>
+              <td><a href="tel:104">104</a></td>
+            </tr>
+            <tr>
+              <th scope="row">27</th>
+              <td>Uttar Pradesh</td>
+              <td><a href="tel:18001805145">18001805145</a></td>
+            </tr>
+            <tr>
+              <th scope="row">28</th>
+              <td>West Bengal</td>
+              <td><a href="tel:3323412600">3323412600</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <%- include('partials/footer') -%>
+    </div>
+  </body>
+</html>

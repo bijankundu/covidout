@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:description"
+      content="A collection of useful data visualisation of the Corona virus outbreak."
+    />
+    <link rel="shortcut icon" href="images/index.ico" />
     <title>Covid - 19</title>
     <link
       rel="stylesheet"
@@ -10,16 +15,22 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <div class="navigation-wrap bg-light start-header start-style">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <nav class="navbar navbar-expand-md navbar-light">
-              <div class="navbar-brand" id="brand">
-                COVID - 19
-                <span class="country"> <%= country %> </span>
-              </div>
+              <a href="/"
+                ><div class="navbar-brand" id="brand">
+                  COVID - 19
+                  <span class="country"> <%= country %> </span>
+                </div></a
+              >
 
               <button
                 class="navbar-toggler"
@@ -76,8 +87,11 @@
         </div>
         <div class="row card-row mx-auto">
           <div class="card col-lg col-md-6  country_total">
-            <div class="card-title">
+            <div class="card-title card-heading">
               TOTAL CASES
+            </div>
+            <div style="color: #0011ff;">
+              <i class="fas fa-virus fa-2x"></i>
             </div>
             <h1 class="card-title" style="color: #0011ff;">
               <%= india_total %>
@@ -87,8 +101,11 @@
             </p>
           </div>
           <div class="card col-lg col-md-6 country_active">
-            <div class="card-title">
+            <div class="card-title card-heading">
               ACTIVE CASES
+            </div>
+            <div style="color: #ff8903;">
+              <i class="fas fa-heartbeat fa-2x"></i>
             </div>
             <h1 class="card-title " style="color:#ff8903">
               <%= india_active %>
@@ -98,8 +115,11 @@
             </p>
           </div>
           <div class="card col-lg col-md-6 country_recovered">
-            <div class="card-title">
+            <div class="card-title card-heading">
               TOTAL RECOVERED
+            </div>
+            <div style="color: #00ff04;">
+              <i class="fas fa-hand-holding-heart fa-2x"></i>
             </div>
             <h1 class="card-title " style="color: #00ff04;">
               <%= india_recovered %>
@@ -109,8 +129,11 @@
             </p>
           </div>
           <div class="card col-lg col-md-6 country_critical">
-            <div class="card-title">
+            <div class="card-title card-heading">
               CRITICAL CASES
+            </div>
+            <div style="color: #ff0000;">
+              <i class="fas fa-procedures fa-2x"></i>
             </div>
             <h1 class="card-title " style="color: #ff0000;">
               <%= india_critical %>
@@ -120,8 +143,11 @@
             </p>
           </div>
           <div class="card col-lg col-md-6  country_dead">
-            <div class="card-title">
+            <div class="card-title card-heading">
               TOTAL DEATH
+            </div>
+            <div style="color: #636161;">
+              <i class="fas fa-heart-broken fa-2x"></i>
             </div>
             <h1 class="card-title" style="color: #636161;">
               <%= india_dead %>
@@ -137,40 +163,55 @@
         </div>
         <div class="row card-row mx-auto">
           <div class="card col-md-6 col-sm-12 col-lg country_total">
-            <div class="card-title">
+            <div class="card-title card-heading">
               TOTAL CASES
+            </div>
+            <div style="color: #0011ff;">
+              <i class="fas fa-virus fa-2x"></i>
             </div>
             <h1 class="card-title" style="color: #0010f2;">
               <%= world_total %>
             </h1>
           </div>
           <div class="card col-md-6 col-sm-12 col-lg country_active">
-            <div class="card-title">
+            <div class="card-title card-heading">
               ACTIVE CASES
+            </div>
+            <div style="color: #ff8903;">
+              <i class="fas fa-heartbeat fa-2x"></i>
             </div>
             <h1 class="card-title" style="color: #ff8903;">
               <%= world_active %>
             </h1>
           </div>
           <div class="card col-md-6 col-sm-12 col-lg country_recovered">
-            <div class="card-title">
+            <div class="card-title card-heading">
               TOTAL RECOVERED
+            </div>
+            <div style="color: #00ff04;">
+              <i class="fas fa-hand-holding-heart fa-2x"></i>
             </div>
             <h1 class="card-title" style="color: #00ff04;">
               <%= world_recovered %>
             </h1>
           </div>
           <div class="card col-md-6 col-sm-12 col-lg country_critical">
-            <div class="card-title">
+            <div class="card-title card-heading">
               AFFECTED COUNTRIES
+            </div>
+            <div style="color: #ff0000;">
+              <i class="fas fa-globe-asia fa-2x"></i>
             </div>
             <h1 class="card-title" style="color: #ff0000;">
               <%= world_affected %>
             </h1>
           </div>
           <div class="card col-md-6 col-sm-12 col-lg  country_dead">
-            <div class="card-title">
+            <div class="card-title card-heading">
               TOTAL DEATH
+            </div>
+            <div style="color: #636161;">
+              <i class="fas fa-heart-broken fa-2x"></i>
             </div>
             <h1 class="card-title" style="color: #636161;">
               <%= world_dead %>
