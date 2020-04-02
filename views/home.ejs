@@ -1,145 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covid - 19</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <div class="navigation-wrap bg-light start-header start-style">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <div class="navbar-brand" id="brand"> COVID - 19
-                            <span class="country"> <%= country %> </span>
-                        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <div class="navbar-brand" id="brand">
+                COVID - 19
+                <span class="country"> <%= country %> </span>
+              </div>
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/helpline">Helpline</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/test-centers">Test Centers</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/affected-countries">Affected Countries</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="/sources">Sources</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </nav>
-                </div>
-            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/helpline">Helpline</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/test-centers">Test Centers</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/affected-countries"
+                      >Affected Countries</a
+                    >
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="/sources">Sources</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-
-        <div class="container">
-            <div class="row mx-auto">
-                <div class="col-lg col-md-6">
-                    <h4>Coronavirus Outbreak in <span class="country"><%= country %></span> </h4>
-                </div>
-                <div class="text-right col-lg col-md-6">
-                    <div class="date">
-                        <h6>Jan 30, 2020 --> <%= today %> (today) </h6>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row mx-auto">
+          <div class="col-lg col-md-6">
+            <h4>
+              Coronavirus Outbreak in
+              <span class="country"><%= country %></span>
+            </h4>
+          </div>
+          <div class="text-right col-lg col-md-6">
+            <div class="date">
+              <h6>Jan 30, 2020 --> <%= today %> (today)</h6>
             </div>
-            <div class="row card-row mx-auto">
-                <div class="card col-lg col-md-6  country_total">
-                    <div class="card-title">
-                        TOTAL CASES
-                    </div>
-                    <h1 class="card-title" style="color: #0011ff;"><%= india_total %> </h1>
-                    <p class="card-text"><%= india_total_percentage%>% of total cases in the world.</p>
-                </div>
-                <div class="card col-lg col-md-6 country_active">
-                    <div class="card-title">
-                        ACTIVE CASES
-                    </div>
-                    <h1 class="card-title " style="color:#ff8903"><%= india_active %> </h1>
-                    <p class="card-text"><%= india_active_cases_percentage %>% of total active cases.</p>
-                </div>
-                <div class="card col-lg col-md-6 country_recovered">
-                    <div class="card-title">
-                        TOTAL RECOVERED
-                    </div>
-                    <h1 class="card-title " style="color: #00ff04;"><%= india_recovered %> </h1>
-                    <p class="card-text"><%= india_recovered_percentage %>% of total active cases.</p>
-                </div>
-                <div class="card col-lg col-md-6 country_critical">
-                    <div class="card-title">
-                        CRITICAL CASES
-                    </div>
-                    <h1 class="card-title " style="color: #ff0000;"><%= india_critical %> </h1>
-                    <p class="card-text"><%= india_critical_percentage %>% of total active cases.</p>
-                </div>
-                <div class="card col-lg col-md-6  country_dead">
-                    <div class="card-title">
-                        TOTAL DEATH
-                    </div>
-                    <h1 class="card-title" style="color: #636161;"><%= india_dead %> </h1>
-                    <p class="card-text"><%= india_dead_percentage %>% of total active cases.</p>
-                </div>
+          </div>
+        </div>
+        <div class="row card-row mx-auto">
+          <div class="card col-lg col-md-6  country_total">
+            <div class="card-title">
+              TOTAL CASES
             </div>
-
-
-
-            <div class="row world-stats justify-content-center">
-                <h2>World Status</h2>
+            <h1 class="card-title" style="color: #0011ff;">
+              <%= india_total %>
+            </h1>
+            <p class="card-text">
+              <%= india_total_percentage%>% of total cases in the world.
+            </p>
+          </div>
+          <div class="card col-lg col-md-6 country_active">
+            <div class="card-title">
+              ACTIVE CASES
             </div>
-            <div class="row card-row mx-auto">
-                <div class="card col-md-6 col-sm-12 col-lg country_total">
-                    <div class="card-title">
-                        TOTAL CASES
-                    </div>
-                    <h1 class="card-title" style="color: #0010f2;"><%= world_total %> </h1>
-
-                </div>
-                <div class="card col-md-6 col-sm-12 col-lg country_active">
-                    <div class="card-title">
-                        NEW CASES
-                    </div>
-                    <h1 class="card-title" style="color: #ff8903;"><%= world_new %> </h1>
-                </div>
-                <div class="card col-md-6 col-sm-12 col-lg country_recovered">
-                    <div class="card-title">
-                        TOTAL RECOVERED
-                    </div>
-                    <h1 class="card-title" style="color: #00ff04;"><%= world_recovered %> </h1>
-                </div>
-                <div class="card col-md-6 col-sm-12 col-lg country_critical">
-                    <div class="card-title">
-                        NEW DEATHS
-                    </div>
-                    <h1 class="card-title" style="color: #ff0000;"><%= world_new_death %> </h1>
-
-                </div>
-                <div class="card col-md-6 col-sm-12 col-lg  country_dead">
-                    <div class="card-title">
-                        TOTAL DEATH
-                    </div>
-                    <h1 class="card-title" style="color: #636161;"><%= world_dead %> </h1>
-                    <p class="card-text"><%= world_dead_percentage %>% of total cases.</p>
-                </div>
+            <h1 class="card-title " style="color:#ff8903">
+              <%= india_active %>
+            </h1>
+            <p class="card-text">
+              <%= india_active_cases_percentage %>% of total active cases.
+            </p>
+          </div>
+          <div class="card col-lg col-md-6 country_recovered">
+            <div class="card-title">
+              TOTAL RECOVERED
             </div>
+            <h1 class="card-title " style="color: #00ff04;">
+              <%= india_recovered %>
+            </h1>
+            <p class="card-text">
+              <%= india_recovered_percentage %>% of total active cases.
+            </p>
+          </div>
+          <div class="card col-lg col-md-6 country_critical">
+            <div class="card-title">
+              CRITICAL CASES
+            </div>
+            <h1 class="card-title " style="color: #ff0000;">
+              <%= india_critical %>
+            </h1>
+            <p class="card-text">
+              <%= india_critical_percentage %>% of total active cases.
+            </p>
+          </div>
+          <div class="card col-lg col-md-6  country_dead">
+            <div class="card-title">
+              TOTAL DEATH
+            </div>
+            <h1 class="card-title" style="color: #636161;">
+              <%= india_dead %>
+            </h1>
+            <p class="card-text">
+              <%= india_dead_percentage %>% of total active cases.
+            </p>
+          </div>
         </div>
 
+        <div class="row world-stats justify-content-center">
+          <h2>World Status</h2>
+        </div>
+        <div class="row card-row mx-auto">
+          <div class="card col-md-6 col-sm-12 col-lg country_total">
+            <div class="card-title">
+              TOTAL CASES
+            </div>
+            <h1 class="card-title" style="color: #0010f2;">
+              <%= world_total %>
+            </h1>
+          </div>
+          <div class="card col-md-6 col-sm-12 col-lg country_active">
+            <div class="card-title">
+              ACTIVE CASES
+            </div>
+            <h1 class="card-title" style="color: #ff8903;">
+              <%= world_active %>
+            </h1>
+          </div>
+          <div class="card col-md-6 col-sm-12 col-lg country_recovered">
+            <div class="card-title">
+              TOTAL RECOVERED
+            </div>
+            <h1 class="card-title" style="color: #00ff04;">
+              <%= world_recovered %>
+            </h1>
+          </div>
+          <div class="card col-md-6 col-sm-12 col-lg country_critical">
+            <div class="card-title">
+              AFFECTED COUNTRIES
+            </div>
+            <h1 class="card-title" style="color: #ff0000;">
+              <%= world_affected %>
+            </h1>
+          </div>
+          <div class="card col-md-6 col-sm-12 col-lg  country_dead">
+            <div class="card-title">
+              TOTAL DEATH
+            </div>
+            <h1 class="card-title" style="color: #636161;">
+              <%= world_dead %>
+            </h1>
+            <p class="card-text">
+              <%= world_dead_percentage %>% of total cases.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <%-  include('partials/footer') -%>
+      <%- include('partials/footer') -%>
+    </div>
+  </body>
+</html>
