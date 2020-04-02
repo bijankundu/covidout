@@ -91,6 +91,19 @@ footer {
 div i {
   padding: 5% 0 5% 0;
 }
+
+#confirmed {
+  width: 100%;
+  height: 35em;
+}
+#recovered {
+  width: 100%;
+  height: 35em;
+}
+#dead {
+  width: 100%;
+  height: 35em;
+}
 /* #Navigation
 ================================================== */
 #brand {
@@ -322,5 +335,32 @@ div i {
   }
   .card-heading {
     font-size: 1.4rem;
+  }
+  #confirmed {
+    height: 25em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #recovered {
+    height: 25em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #dead {
+    height: 25em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #state-status {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
