@@ -155,10 +155,12 @@ function stateChart() {
 
       result.forEach(ele => {
         let temp = Object.entries(ele[1].districtData);
-        data.push([ele[0], 0, getRandomColor()]);
-        temp.forEach(element => {
-          data[data.length - 1][1] += Number(element[1].confirmed);
-        });
+        if (ele[0] != "Unknown") {
+          data.push([ele[0], 0, getRandomColor()]);
+          temp.forEach(element => {
+            data[data.length - 1][1] += Number(element[1].confirmed);
+          });
+        }
       });
       data.unshift(["State", "Cases", { role: "style" }]);
       google.charts.load("current", { packages: ["corechart"] });
@@ -196,7 +198,7 @@ function stateChart() {
         );
         chart.draw(view, options);
       }
-      //console.log(data);
+      console.log(data);
     }
   }
 }
