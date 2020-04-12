@@ -23,6 +23,13 @@ This is a covid - 19 tracker web app. It pulls data from various APIs and update
 1.  [Novelcovid api ](https://github.com/novelcovid/api)
 2.  [Covid19india api](https://github.com/covid19india/api)
 
+### Setup
+
+> git clone https://github.com/bijankundu/covidout
+> npm install
+> npm install nodemon (optional)
+> nodemon app.js / node app.js (if optional part is skipped)
+
 ##### Inspired by
 
 [Upcode's website](https://co.vid19.sg/singapore/)
