@@ -25,10 +25,13 @@ This is a covid - 19 tracker web app. It pulls data from various APIs and update
 
 ### Setup
 
-> git clone https://github.com/bijankundu/covidout
-> npm install
-> npm install nodemon (optional)
-> nodemon app.js / node app.js (if optional part is skipped)
+> `git clone https://github.com/bijankundu/covidout`
+>
+> `npm install`
+>
+> `npm install nodemon (optional)`
+>
+> `nodemon app.js / node app.js (if optional part is skipped)`
 
 ##### Inspired by
 
