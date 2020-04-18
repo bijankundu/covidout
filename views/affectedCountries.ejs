@@ -11,13 +11,13 @@
       </tr>
     </thead>
     <tbody>
-      <% affectedCountries.forEach((ele,index)=>{ %>
+      <% affectedCountries.forEach((ele,index)=>{ %> <% if(ele!='') {%>
       <tr>
-        <th scope="row"><%= (index+1) %></th>
+        <th scope="row"><%= (index) %></th>
 
         <td><a href="/country/<%= ele %> "><%= ele %> </a></td>
       </tr>
-      <% }); %>
+      <% }}); %>
     </tbody>
   </table>
 </div>

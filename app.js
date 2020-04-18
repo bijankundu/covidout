@@ -55,7 +55,7 @@ fetch("https://corona.lmao.ninja/v2/all?yesterday=false")
     serve.end(function (res) {
       if (res.error) throw new Error(res.error);
       countries = JSON.parse(res.body);
-      // console.log(countries.affected_countries);
+      console.log(countries.affected_countries);
     });
     app.get("/", (req, res) => {
       // serve = unirest("GET", "https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php");
@@ -75,7 +75,9 @@ fetch("https://corona.lmao.ninja/v2/all?yesterday=false")
       //     // console.log(country_stats);
       // });
 
-      fetch("https://corona.lmao.ninja/v2/countries/india?yesterday=false&strict=true")
+      fetch(
+        "https://corona.lmao.ninja/v2/countries/india?yesterday=false&strict=true"
+      )
         .then((res) => res.json())
         .then((json) => {
           india_status = json;
@@ -178,7 +180,11 @@ fetch("https://corona.lmao.ninja/v2/all?yesterday=false")
       //     country_stats = JSON.parse(res.body);
       //     // console.log(country_stats);
       // });
-      fetch("https://corona.lmao.ninja/countries/" + country)
+      fetch(
+        "https://corona.lmao.ninja/v2/countries/" +
+          country +
+          "?yesterday=false&strict=true"
+      )
         .then((res) => res.json())
         .then((json) => {
           country_stats = json;
