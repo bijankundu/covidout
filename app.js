@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 
 app.use(
   bodyParser.urlencoded({
-    extended: true
+    extended: true,
   })
 );
 
@@ -36,9 +36,9 @@ app.use(express.static("public"));
 //   // console.log(world_stats);
 // });
 
-fetch("https://corona.lmao.ninja/all")
-  .then(res => res.json())
-  .then(json => {
+fetch("https://corona.lmao.ninja/v2/all?yesterday=false")
+  .then((res) => res.json())
+  .then((json) => {
     world_stats = json;
     // console.log(world_stats);
 
@@ -49,10 +49,10 @@ fetch("https://corona.lmao.ninja/all")
 
     serve.headers({
       "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-      "x-rapidapi-key": "f9a8a5b0eemsh7d728929b6747e7p161899jsn9bb7591ffe1c"
+      "x-rapidapi-key": "f9a8a5b0eemsh7d728929b6747e7p161899jsn9bb7591ffe1c",
     });
 
-    serve.end(function(res) {
+    serve.end(function (res) {
       if (res.error) throw new Error(res.error);
       countries = JSON.parse(res.body);
       // console.log(countries.affected_countries);
@@ -75,16 +75,16 @@ fetch("https://corona.lmao.ninja/all")
       //     // console.log(country_stats);
       // });
 
-      fetch("https://corona.lmao.ninja/countries/india")
-        .then(res => res.json())
-        .then(json => {
+      fetch("https://corona.lmao.ninja/v2/countries/india?yesterday=false&strict=true")
+        .then((res) => res.json())
+        .then((json) => {
           india_status = json;
 
           let today = new Date();
           const options = {
             year: "numeric",
             month: "short",
-            day: "numeric"
+            day: "numeric",
           };
           let india_status_total_cases = india_status.cases;
 
@@ -137,26 +137,26 @@ fetch("https://corona.lmao.ninja/all")
             india_dead_percentage: Math.ceil(
               (Number(india_status.deaths) / Number(india_status_total_cases)) *
                 100
-            )
+            ),
           });
         });
     });
 
     app.get("/test-centers", (req, res) => {
       res.render("test-centers", {
-        country: "INDIA"
+        country: "INDIA",
       });
     });
 
     app.get("/helpline", (req, res) => {
       res.render("helpline", {
-        country: "INDIA"
+        country: "INDIA",
       });
     });
 
     app.get("/sources", (req, res) => {
       res.render("sources", {
-        country: ""
+        country: "",
       });
     });
 
@@ -179,15 +179,15 @@ fetch("https://corona.lmao.ninja/all")
       //     // console.log(country_stats);
       // });
       fetch("https://corona.lmao.ninja/countries/" + country)
-        .then(res => res.json())
-        .then(json => {
+        .then((res) => res.json())
+        .then((json) => {
           country_stats = json;
 
           let today = new Date();
           const options = {
             year: "numeric",
             month: "short",
-            day: "numeric"
+            day: "numeric",
           };
           let country_total_cases = country_stats.cases;
 
@@ -239,7 +239,7 @@ fetch("https://corona.lmao.ninja/all")
               .replace(" ", ","),
             country_dead_percentage: Math.ceil(
               (Number(country_stats.deaths) / Number(country_total_cases)) * 100
-            )
+            ),
           });
         });
     });
@@ -247,7 +247,7 @@ fetch("https://corona.lmao.ninja/all")
 app.get("/affected-countries", (req, res) => {
   res.render("affectedCountries", {
     affectedCountries: countries.affected_countries,
-    country: ""
+    country: "",
   });
 });
 
