@@ -50,8 +50,14 @@ This is a covid - 19 tracker web app. It pulls data from various APIs and update
 
 ### Screenshots
 
-![Desktop View](https://github.com/bijankundu/covidout/blob/master/public/images/mobile1.JPG)
+##### Desktop View
+
+![Desktop View](https://github.com/bijankundu/covidout/blob/master/public/images/desktop1.JPG)
+
+##### Mobile View
+
+![Mobile View](https://github.com/bijankundu/covidout/blob/master/public/images/mobile1.JPG)
 
 ##### Inspired by
 
-[Upcode's website](https://co.vid19.sg/singapore/)
+[covidout's website](https://co.vid19.sg/singapore/)
